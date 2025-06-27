@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Guilherme B Ribeiro</title>
+</head>
+<body>
+  <h1>Formulário de Currículo</h1>
+
+  <!-- DADOS PESSOAIS -->
+  <fieldset>
+    <legend>DADOS PESSOAIS</legend>
+
+    <fieldset>
+      <legend>Identificação</legend>
+      Nome Completo: <input type="text" name="nome"><br>
+      Nacionalidade:
+      <input type="radio" name="nacionalidade" value="brasileira"> Brasileira
+      <input type="radio" name="nacionalidade" value="estrangeira"> Estrangeira<br>
+      CPF: <input type="text" name="cpf"><br>
+      Número do Passaporte: <input type="text" name="passaporte"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Dados de Nascimento</legend>
+      Data: <input type="date" name="data_nascimento"><br>
+      País:
+      <select name="pais_nasc">
+        <option>Brasil</option>
+        <option>Estados Unidos</option>
+        <option>Japão</option>
+        <option>França</option>
+        <option>Canadá</option>
+      </select>
+      UF:
+      <select name="estado_nasc">
+        <option>SP</option><option>RJ</option><option>MG</option><option>BA</option><option>RS</option>
+      </select>
+      Cidade: <input type="text" name="cidade_nasc"><br>
+      Sexo:
+      <input type="radio" name="sexo" value="feminino"> Feminino
+      <input type="radio" name="sexo" value="masculino"> Masculino
+    </fieldset>
+
+    <fieldset>
+      <legend>Identidade</legend>
+      Número: <input type="text" name="rg"><br>
+      Órgão Emissor: <input type="text" name="orgao_emissor"><br>
+      UF:
+      <select name="estado_rg">
+        <option>SP</option><option>RJ</option><option>MG</option><option>BA</option><option>RS</option>
+      </select>
+      Data: <input type="date" name="data_rg"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Filiação</legend>
+      Nome do Pai: <input type="text" name="pai"><br>
+      Nome da Mãe: <input type="text" name="mae"><br>
+    </fieldset>
+  </fieldset>
+
+  <!-- ENDEREÇO -->
+  <fieldset>
+    <legend>ENDEREÇO</legend>
+
+    <fieldset>
+      <legend>Endereço Profissional</legend>
+      Empresa/Instituição: <input type="text" name="empresa"><br>
+      Logradouro:
+      <select name="logra_prof">
+        <option>Rua</option><option>Avenida</option><option>Praça</option><option>Travessa</option>
+        <option>Alameda</option><option>Beco</option><option>Passagem</option><option>Estrada</option>
+      </select>
+      Endereço: <input type="text" name="endereco_prof">
+      Bairro: <input type="text" name="bairro_prof"><br>
+      País:
+      <select name="pais_prof">
+        <option>Brasil</option><option>Argentina</option><option>Alemanha</option><option>Itália</option><option>Chile</option>
+      </select>
+      ESTADO:
+      <select name="estado_prof">
+        <option>SP</option><option>RJ</option><option>MG</option><option>BA</option><option>RS</option>
+      </select>
+      Cidade: <input type="text" name="cidade_prof">
+      CEP: <input type="text" name="cep_prof"><br>
+      Caixa Postal: <input type="text" name="cx_prof"><br>
+      DDD: <input type="text" name="ddd_prof">
+      Telefone: <input type="text" name="fone_prof">
+      Ramal: <input type="text" name="ramal_prof">
+      Fax: <input type="text" name="fax_prof"><br>
+      E-mail: <input type="email" name="email_prof"><br>
+      Homepage Institucional: <input type="url" name="site_prof"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Endereço Residencial</legend>
+      Logradouro:
+      <select name="logra_res">
+        <option>Rua</option><option>Avenida</option><option>Praça</option><option>Travessa</option>
+        <option>Alameda</option><option>Beco</option><option>Passagem</option><option>Estrada</option>
+      </select>
+      Endereço: <input type="text" name="endereco_res">
+      Bairro: <input type="text" name="bairro_res"><br>
+      País:
+      <select name="pais_res">
+        <option>Brasil</option><option>Argentina</option><option>Alemanha</option><option>Itália</option><option>Chile</option>
+      </select>
+      UF:
+      <select name="estado_res">
+        <option>SP</option><option>RJ</option><option>MG</option><option>BA</option><option>RS</option>
+      </select>
+      Cidade: <input type="text" name="cidade_res">
+      CEP: <input type="text" name="cep_res"><br>
+      Caixa Postal: <input type="text" name="cx_res"><br>
+      DDD: <input type="text" name="ddd_res">
+      Telefone: <input type="text" name="fone_res">
+      Fax: <input type="text" name="fax_res"><br>
+      E-mail: <input type="email" name="email_res"><br>
+      Homepage Pessoal: <input type="url" name="site_res"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Endereço Preferencial Para Correspondência</legend>
+      <input type="radio" name="endereco_preferencial" value="profissional"> Profissional
+      <input type="radio" name="endereco_preferencial" value="residencial"> Residencial
+    </fieldset>
+  </fieldset>
+
+  <!-- FORMAÇÃO ACADÊMICA -->
+  <fieldset>
+    <legend>FORMAÇÃO ACADÊMICA / TITULAÇÃO</legend>
+
+    <fieldset>
+      <legend>Formação</legend>
+      Nível:
+      <input type="radio" name="formacao" value="grad"> Graduação
+      <input type="radio" name="formacao" value="aperf"> Aperfeiçoamento
+      <input type="radio" name="formacao" value="esp"> Especialização
+      <input type="radio" name="formacao" value="mestrado"> Mestrado
+      <input type="radio" name="formacao" value="doutorado"> Doutorado<br>
+      Carga Horária: <input type="number" name="carga_formacao"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Instituição / Curso</legend>
+      Instituição: <input type="text" name="instituicao"><br>
+      Nome do Curso: <input type="text" name="curso"><br>
+      Status do Curso:
+      <input type="radio" name="status" value="andamento"> Em andamento
+      <input type="radio" name="status" value="concluido"> Com título obtido<br>
+      Período (ano): <input type="text" name="periodo"><br>
+      Início: <input type="month" name="inicio">
+      Conclusão: <input type="month" name="fim"><br>
+      Obtenção do título: <input type="text" name="obtencao_titulo"><br>
+      Título da Monografia/Dissertação/Tese: <input type="text" name="titulo_trabalho"><br>
+      Nome Completo do Orientador: <input type="text" name="orientador"><br>
+      Bolsa:
+      <input type="radio" name="bolsa" value="sim"> Sim
+      <input type="radio" name="bolsa" value="nao"> Não<br>
+      Entidade Financeira: <input type="text" name="entidade">
+    </fieldset>
+  </fieldset>
+
+  <!-- ATUAÇÃO PROFISSIONAL -->
+  <fieldset>
+    <legend>ATUAÇÃO PROFISSIONAL</legend>
+
+    <fieldset>
+      <legend>Instituição de Trabalho</legend>
+      Instituição/Empresa: <input type="text" name="empresa_prof">
+      Sigla: <input type="text" name="sigla"><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Atividades Exercidas</legend>
+      <input type="checkbox" name="atividade" value="conselhos"> Conselhos, comissões e consultoria<br>
+      <input type="checkbox" name="atividade" value="direcao"> Direção e administração<br>
+      <input type="checkbox" name="atividade" value="ensino"> Ensino<br>
+      <input type="checkbox" name="atividade" value="estagio"> Estágio<br>
+      <input type="checkbox" name="atividade" value="extensao"> Extensão universitária<br>
+      <input type="checkbox" name="atividade" value="pesquisa"> Pesquisa e desenvolvimento<br>
+      <input type="checkbox" name="atividade" value="servicos"> Serviços técnicos e especializados<br>
+      <input type="checkbox" name="atividade" value="treinamentos"> Treinamentos ministrados<br>
+      <input type="checkbox" name="atividade" value="outras"> Outras atividades técnico-científicas<br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Vínculo Institucional</legend>
+      Período:
+      <input type="radio" name="vinculo" value="anterior"> Anterior
+      <input type="radio" name="vinculo" value="atual"> Atual<br>
+      Início: <input type="month" name="inicio_vinculo">
+      Fim: <input type="month" name="fim_vinculo"><br>
+      Tipo de Vínculo:
+      <select name="tipo_vinculo">
+        <option>Servidor Público</option>
+        <option>Celetista</option>
+        <option>Outro</option>
+      </select><br>
+      Carga Horária Semanal: <input type="number" name="carga_horaria">
+    </fieldset>
+  </fieldset>
+
+  <br>
+  <input type="submit" value="Enviar">
+</body>
+</html>
